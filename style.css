@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  list-style: none;
+}
+
+:root {
+  /* Backgrounds */
+  --background-header: #816c61;
+  --background-doom: #a89b9d;
+  /* Fonts-Family */
+  --font-family: @import
+    url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap");
+  --font-family-medium: @import
+    url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,500&display=swap");
+  /* Colors-Fonts */
+  --font-color: #efe7f0;
+  --color-hover: #cfcfea;
+}
+
+body {
+  background: var(--background-doom);
+}
+
+.header-nav {
+  background: var(--background-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.img-log {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  background-image: url(./img/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav-link {
+  display: flex;
+  gap: 10rem;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+a:hover {
+  color: var(--color-hover);
+}
